@@ -1,12 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<html>  
+    <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login @ Conestoga Finance</title>  
+        <link rel = "stylesheet" type = "text/css" href = "css/login.css">  
+    </head>  
+    <body>  
+        <div id = "frm">  
+        <strong class="title">Conestoga Finance</strong>
+            <h1>Login</h1>  
+            <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  <!-- creating a form with post method -->
+                  
+                    <!-- admin credentials email: admin@admin.com pwd admin11 -->
+                    <label> Email: </label>  
+                    <input type = "email" id ="user" name  = "user" placeholder="Email"/>  
+                    <label> Password: </label>  
+                    <input type = "password" id ="pass" name  = "pass" placeholder="**********" />  
+                    <input type =  "submit" id = "btn" value = "Login" />  
+                  
+            </form>  
+        </div>  
+        <!-- using javascript for form validation and alert to show errors -->
+        <script>  
+                function validation()  
+                {  
+                    var id=document.f1.user.value;  
+                    var ps=document.f1.pass.value;  
+                    if(id.length=="" && ps.length=="") {  
+                        alert("Email and Password fields are empty");  
+                        return false;  
+                    }  
+                    else  
+                    {  
+                        if(id.length=="") {  
+                            alert("Email field is empty");  
+                            return false;  
+                        }   
+                        if (ps.length=="") {  
+                        alert("Password field is empty");  
+                        return false;  
+                        }  
+                    } 
+
+                    if(id=="admin@admin.com") {  
+                        alert("Email field is empty");  
+                        return false;  
+                    }   
+                    if (ps=="admin11") {  
+                        alert("Password field is empty");  
+                        return false;  
+                    }  
+
+                }  
+            </script>  
+    </body>     
+    </html>  
