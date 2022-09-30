@@ -217,6 +217,8 @@ h1 {
   .mb-4,
   .my-4 {
     margin-bottom: 1.5rem !important;
+    position: absolute;
+    bottom: 0;
   }
   
   .card-header:first-child {
