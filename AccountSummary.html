@@ -5,7 +5,7 @@
         <title>Account Summary</title>
         <style>
             body {
-            background-color: #D3DBDE;
+            background-color: white;
             margin: 0 10%;
             font-family: sans-serif;
             }
@@ -42,12 +42,36 @@
   padding: 5px;
     }
     </style>
+    <link rel="stylesheet" href="styles/style.css">
 
 
     </head>
     <body>
+      <header>
+         <div class="upper-header">
+             <div class="upper-block">
+                 <a href="login.html" class="logout-btn">Log Out</a>
+                 <a href="#">Contact Us</a>
+             </div>
+             
+         </div>
+         <div class="lower-header">
+             <div class="logo">
+                 <img src="images/logo-flex-white.PNG" alt="">
+             </div>
+             <div class="menu">
+                 <a href="Customerinfo.html">Customer Info</a>
+                 <a href="AccountSummary.html">Account Summary</a>
+                 <a href="interac.html" class="active">Interac</a>
+               </div>
+         </div>
+         <div class="header-img">
+             <img src="images/Pink Purple Watercolor Linktree Background.png" alt="">
+         </div>
+     </header>
     
-        <div>     
+      <div>    
+      <div class="interac-container"> 
      <h1>Account Summary</h1>
      <h2 class="CheckingAccount"> 
         <li>Account Number: 123456789</li></h2>
@@ -61,5 +85,6 @@
      <h2 class="SavingAccount">
         <li> Account Number: 9876543210</li></h2>
      <h2 class="SavingBalance"> Balance: $5000</h2>
+     </div>
      </body>
 </html>
