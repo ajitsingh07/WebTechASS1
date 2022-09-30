@@ -21,8 +21,8 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-    background: -webkit-linear-gradient(to right,  #89cec8 ,#D3DBDE);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #89cec8,#D3DBDE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right,  #effffe ,#ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #effffd,#ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 0;
     font-family: Open Sans, sans-serif;
   font-size: 1rem;
@@ -82,7 +82,11 @@ h1 {
 }
 
 .main-content {
-  position: relative;
+  position: absolute;
+  top:65%;
+  left:50%;
+  transform: translate(-50%,-20%);
+
 }
 
 .main-content .navbar-top {
