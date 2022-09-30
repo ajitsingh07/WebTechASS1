@@ -41,14 +41,10 @@
                         }  
                     } 
 
-                    if(id=="admin@admin.com") {  
-                        alert("Email field is empty");  
+                    if(id!="admin@admin.com" || ps!="admin11") {  
+                        alert("Invalid email or password");  
                         return false;  
                     }   
-                    if (ps=="admin11") {  
-                        alert("Password field is empty");  
-                        return false;  
-                    }  
 
                 }  
             </script>  
