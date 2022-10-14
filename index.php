@@ -10,6 +10,22 @@
             <img src="images/logo-flex-white.PNG" alt="">
             </center>
         </div> 
+        <center class="modify">
+        <?php
+
+            $dat = new DateTime('now', new DateTimeZone('Canada/Eastern'));
+            $date=$dat->format('H');
+            if($date < 12) 
+            echo "Good morning!"; 
+            else if($date < 17) 
+            echo "Good afternoon!";
+            else if($date<20)
+            echo "Good evening!"; 
+            else 
+            echo "Good evening!"; 
+
+        ?>
+        </center>
         <div id = "frm">  
         <strong class="title">Conestoga Finance</strong>
             <h1>Login</h1>  

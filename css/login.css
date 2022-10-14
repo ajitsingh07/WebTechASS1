@@ -70,6 +70,10 @@ h1, label {
     box-sizing: border-box;
   }
 
+.modify {
+    color: #ccc;
+    font-size: 28px;
+  }
 
 input[type=submit] {
     width: 100%;
