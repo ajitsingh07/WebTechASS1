@@ -52,7 +52,7 @@
                         alert("Invalid email or password");  
                         return false;  
                     }   
-
+                    return true;
                 }  
             </script>  
     </body>     
