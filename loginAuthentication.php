@@ -10,7 +10,7 @@
           
            
             // creating query to fetch data from datavbase and checking if user exists or not
-            $sql = "select * from info where email = '$username' and password = '$password'";
+            $sql = "select * from users where email = '$username' and password = '$password'";
             $result =  $db->query($sql);
             if($result->num_rows > 0) { // if user exists then starting a session and storing data into session and moving user to desired page according to the user type
            while($row = $result->fetch_assoc()) {

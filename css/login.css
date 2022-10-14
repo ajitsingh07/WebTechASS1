@@ -8,17 +8,19 @@ body{
 }
 #frm{  
     border: solid #333 1px;  
-    width:25%;  
+    width:45%;  
     border-radius: 2px;  
-    margin: 50px auto;  
+    margin: 40px auto;  
     background-color: #333;
     padding: 50px;  
-}  
+}   
 
-  h1, label {
+.error {color: #FF0001;}
+
+h1, label {
     width:25%; 
     color: white;
-  }
+}
 
   h2 {
     padding-left: 20px;
